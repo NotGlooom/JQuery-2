@@ -92,3 +92,12 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     top: 70px;
     left: 500px;
 }
+
+#div-frigo {
+    position: absolute;
+    border: 1px solid black;
+    height: 520px;
+    width: 358px;
+    top: 112px;
+    left: 550px;
+}

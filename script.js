@@ -56,27 +56,42 @@ $(document).ready(function () {
         validateIdentifiant();
     })
 
-    function validedateIdentifiant() {
+    function validateIdentifiant() {
         let identifiantValue = $("#identifiant").val();
         if (identifiantValue.length === 0) {
             $("#identifiant-check").show().html("**Entrez votre identifiant.")
             identifiantError = false;
             return false;
-        } else if
+        } else if (!identifiantValue.match(/^#[a-z]{4,10}[0-9]{4}$/)) {
+            $("#identifiant-check").show().html("**Doit commencer par #," +
+                " Suivi de 4 à 10 lettres minuscules," +
+                " Suivi de (4) chiffres")
+            identifiantError = false;
+            return false;
+        } else {
+            $("#identifiant-check").hide();
+        }
     }
 
     // Bouton Submit
-    $("#submitbtn").click(function () {
+    $("#submitbtn").unbind("click").click(function () {
         validateDesc();
         validateQuantite();
+        validateIdentifiant();
         if (
             descError === true &&
             quantiteError === true &&
             identifiantError === true
         ) {
-            return true;
-        } else {
-            return false;
+            submit();
         }
     })
+
+
+    // Action submit
+    function submit() {
+
+    }
+
 })
+
