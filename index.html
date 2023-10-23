@@ -24,10 +24,10 @@
             <option value="Repas Principal">Repas Principal</option>
             <option value="Entrée">Entrée</option>
         </select>
-        <h5 id="categorie-check">**Sélectionez une catégorie</h5><br>
+        <!-- <h5 id="categorie-check">**Sélectionez une catégorie</h5><br> -->
 
         <label for="quantite">Portions disponibles *<br>(min. 2 sauf les desserts)</label>
-        <input type="number" id="quantite" name="quantite" required>
+        <input type="number" id="quantite" name="quantite" required ">
         <h5 id="check-quantite">**Entrez une quantité</h5>
         <br>
         <label for="comm">Commentaires<br>(ex. intructions pour réchauffer)</label>
@@ -46,7 +46,7 @@
         <div id="MessagesErreurs"></div>
 
         <div id="div2">
-        <input type="submit" value="Soumettre" onclick="validateForm()">
+        <input type="submit" id="submitbtn" value="Soumettre">
         <input type="reset" value="Annuler">
         </div>
     </div>
