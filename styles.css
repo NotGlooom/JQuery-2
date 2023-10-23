@@ -1,0 +1,94 @@
+h1 {
+    margin-left: 30px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: red;
+}
+
+/* Div principal du form */
+#div1 {
+    width: 400px;
+
+    margin-bottom: 60px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"]{
+    width: 98%;
+    height: 25px;
+}
+
+select {
+    width: 100%;
+    height: 25px;
+}
+
+input[type="number"]{
+    float: right;
+    margin-top: -38px;
+    height: 25px;
+    width: 30px;
+}
+
+textarea {
+    width: 98%;
+    height: 100px;
+}
+
+/* Checkbox */
+#label1 {
+    margin-left: 28px;
+}
+
+input[type="checkbox"]{
+    margin-top: -27px;
+    scale: 130%;
+}
+
+/*Les boutons */
+#div2 {
+    display: flex;
+    float: right;
+}
+
+input[type="submit"], input[type="reset"] {
+    border: solid 2px cornflowerblue;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    background-color: white;
+}
+
+input[type="submit"] {
+    margin-right: 20px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    border: solid 2px #133e8c;
+    background-color: cornflowerblue;
+}
+
+/*Les sections pour afficher les desserts, repas, entrées*/
+#div-dessert, #div-repas, #div-entrée{
+    border: 1px solid black;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+#fridge {
+    position: absolute;
+    top: 70px;
+    left: 500px;
+}

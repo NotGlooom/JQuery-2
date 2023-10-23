@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen 2</title>
+    <link rel="stylesheet" href="styles.css"> <!-- TODO : Votre CSS dans ce fichier -->
+    <script src="script.js" defer></script> <!-- TODO : Votre JavaScript dans ce fichier -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>J'ai déposé un nouvel item dans le réfrigérateur communautaire : </h1>
+<form onsubmit="event.preventDefault();">
+    <!-- TODO : Compléter le code du formulaire -->
+    <div id="div1">
+        <label for="desc">Courte description (max. 100 caractères) *</label>
+        <input type="text" id="desc" name="desc" required>
+        <h5 id="desc-check">**Entrez la description</h5><br>
+        <label for="categorie">Catégorie *</label>
+        <select id="categorie" name="categorie" required>
+            <option value="Dessert">Dessert</option>
+            <option value="Repas Principal">Repas Principal</option>
+            <option value="Entrée">Entrée</option>
+        </select>
+        <h5 id="categorie-check">**Sélectionez une catégorie</h5><br>
+
+        <label for="quantite">Portions disponibles *<br>(min. 2 sauf les desserts)</label>
+        <input type="number" id="quantite" name="quantite" required>
+        <h5 id="check-quantite">**Entrez une quantité</h5>
+        <br>
+        <label for="comm">Commentaires<br>(ex. intructions pour réchauffer)</label>
+        <textarea id="comm" name="comm"></textarea>
+        <br><br>
+
+        <label for="identifiant">Mon identifiant *<br>(pour la traçabilité des aliments)</label>
+        <input type="text" id="identifiant" name="identifiant" required>
+        <h5 id="identifiant-check">**Entrez votre identifiant</h5>
+        <br>
+
+        <label id="label1" for="checkbox">SVP remettre mon plat dans le réfrigérateur</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br><br>
+
+        <div id="MessagesErreurs"></div>
+
+        <div id="div2">
+        <input type="submit" value="Soumettre" onclick="validateForm()">
+        <input type="reset" value="Annuler">
+        </div>
+    </div>
+
+    <img src="refrigerator.png" height="650px"  id="fridge"/>
+    <!-- Divisions pour où afficher les items
+
+    <div id="div-dessert">
+        <h2>Desserts :</h2>
+    </div>
+    <div id="div-repas">
+        <h2>Repas Principals :</h2>
+    </div>
+    <div id="div-entrée">
+        <h2>Entrées :</h2>
+    </div>-->
+
+
+
+
+</form>
+<!-- TODO : Créer les 3 sections dans lesquelles les items seront ajoutés avec JavaScript -->
+
+</body>
+</html>
